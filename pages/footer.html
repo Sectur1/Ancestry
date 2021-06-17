@@ -1,0 +1,107 @@
+<div id="FooterRegion">
+    <footer class="footer clearfix" id="footer" role="contentinfo">
+        <div class="footerLinks clearfix">
+            <ul>
+                <li id="footer-supportcenter"><a class="footerLink" id="footer-link-supportcenter"
+                        href="https://support.ancestry.com/s/" rel="noreferrer">Support Center</a></li>
+                <li id="footer-blog"><a class="footerLink" id="footer-link-blog"
+                        href="https://blogs.ancestry.com/ancestry/" rel="noreferrer">Ancestry Blog</a></li>
+                <li id="footer-sitemap"><a class="footerLink" id="footer-link-sitemap"
+                        href="https://www.ancestry.com/cs/sitemap">Site Map</a></li>
+                <li id="footer-giftsub"><a class="footerLink" id="footer-link-giftsub"
+                        href="https://www.ancestry.com/s45554/t40279/rd.ashx">Gift Memberships</a></li>
+                <li id="footer-careers"><a class="footerLink" id="footer-link-careers"
+                        href="https://www.ancestry.com/corporate/careers/">Careers</a></li>
+            </ul>
+
+            <form action="" class="form footerSites" id="footerSites" method="post"
+                onfocusin="!document.documentElement.classList.contains('mouseEvents') ? this.classList.add('footerShowGo') : null;"
+                onsubmit="window.location = this.action; return false;">
+                <label class="footerSitesLabel" for="footerSitesSelect"><span class="hide480">Visit our other
+                        sites:</span><span class="show480">Other Sites:</span></label>
+                <select class="footerSitesSelect" id="footerSitesSelect" onchange="
+    var footerSitesSelect = document.getElementById('footerSitesSelect');
+    document.documentElement.classList.contains('mouseEvents') ? window.location = footerSitesSelect.value : document.getElementById('footerSites').setAttribute('action', footerSitesSelect.value);
+    window.utag &amp;&amp; window.utag.link({
+        mix_event_name: 'country_dropdown_selection',
+        dropdown_selection: 'site dropdown : ' + footerSitesSelect.options[footerSitesSelect.selectedIndex].getAttribute('data-tracking-name'),
+        link_value: footerSitesSelect.options[footerSitesSelect.selectedIndex].getAttribute('data-tracking-name')
+    });">
+                    <optgroup label="International">
+                        <option id="OS_US" data-tracking-name="us_en" value="https://www.ancestry.com" selected="">
+                            United States</option>
+                        <option id="OS_UK" data-tracking-name="uk_en" value="https://www.ancestry.co.uk">United
+                            Kingdom</option>
+                        <option id="OS_CA_EN" data-tracking-name="ca_en" value="https://www.ancestry.ca?lcid=4105">
+                            Canada (English)</option>
+                        <option id="OS_CA_FR" data-tracking-name="ca_fr" value="https://www.ancestry.ca?lcid=3084">
+                            Canada (Français)</option>
+                        <option id="OS_AU" data-tracking-name="au_en" value="https://www.ancestry.com.au">Australia
+                        </option>
+                        <option id="OS_DE" data-tracking-name="de_de" value="https://www.ancestry.de">Deutschland
+                        </option>
+                        <option id="OS_IT" data-tracking-name="it_it" value="https://www.ancestry.it">Italia
+                        </option>
+                        <option id="OS_FR" data-tracking-name="fr_fr" value="https://www.ancestry.fr">France
+                        </option>
+                        <option id="OS_SE" data-tracking-name="se_se" value="https://www.ancestry.se">Sverige
+                        </option>
+                        <option id="OS_MX" data-tracking-name="mx_es" value="https://www.ancestry.mx">México
+                        </option>
+                    </optgroup>
+                    <optgroup label="Visit our other sites:">
+                        <option id="OS_Corporate" data-tracking-name="Ancestry Corporate"
+                            value="https://www.ancestry.com/corporate/">Ancestry Corporate</option>
+                        <option id="OS_IECorporate" data-tracking-name="Ancestry.ie Corporate"
+                            value="http://www.ancestryeurope.ie">Ancestry.ie Corporate</option>
+                        <option id="OS_Fold3" data-tracking-name="Fold3.com" value="https://www.fold3.com/">
+                            Fold3.com</option>
+                        <option id="OS_Newspapers" data-tracking-name="Newspapers.com"
+                            value="https://www.newspapers.com/">Newspapers.com</option>
+                        <option id="OS_Progen" data-tracking-name="ProGenealogists.com"
+                            value="https://www.progenealogists.com/">ProGenealogists.com</option>
+                        <option id="OS_RootsWeb" data-tracking-name="RootsWeb.com" value="http://www.rootsweb.com">
+                            RootsWeb.com</option>
+                    </optgroup>
+                </select><input class="ancBtn ancBtnR silver" type="submit" value="Go">
+            </form>
+        </div>
+        <ul class="footerLegal">
+            <li class="footerLegalLink">© 1997-2021 Ancestry</li>
+            <li class="footerLegalLink"><a id="footer-link-corporateinfo"
+                    href="https://www.ancestry.com/corporate">Corporate Information</a></li>
+            <li class="footerLegalLink"><a id="footer-link-privacy"
+                    href="https://www.ancestry.com/cs/privacyphilosophy">Privacy</a></li>
+            <li class="footerLegalLink"><a id="footer-link-termsandconditions"
+                    href="https://www.ancestry.com/cs/legal/termsandconditions">Terms and Conditions</a></li>
+            <li class="footerLegalLink"><a id="footer-link-ccpanoticeatcollection"
+                    href="https://www.ancestry.com/cs/legal/privacystatement#personal-info-categories">CCPA Notice
+                    at Collection</a></li>
+            <li class="footerLegalLink"><a id="footer-link-patentancestry"
+                    href="https://www.ancestry.com/cs/legal/patents">Patent</a></li>
+        </ul>
+    </footer>
+</div>
+<!-- Header bottom resources -->
+<script src="/assets/index.js" type="text/javascript"></script>
+<script src="/assets/main.js" type="text/javascript"></script>
+<script src="/assets/b.js" type="text/javascript"></script>
+<script src="/assets/a.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var utag_data = {
+        page_name: "ancestry us : general sites : acom : ancestry-family", // page_name (eVar41)
+        page_name_tier2: "", // page_name_tier2 (eVar42/prop42)
+        page_name_tier3: "", // page_name_tier3 (eVar43/prop42)
+        product_type: "0:", // product_type (subscription type - prop10/eVar15)
+        customer_segment: "", // customer_segment (prop12)
+        subscription_type: "0:", // subscription_type (eVar15)
+        cust_segment: "NRVisitor", // cust_segment
+        sc_event: "", // sc_event (This can be used to set the SiteCatalyst event, ie prodview or event##)
+        server: "", // omniture s.server
+        user_sub_status: "" // omniture prop23 / GA custom var 1
+    }
+</script>
+</body>
+
+</html>
