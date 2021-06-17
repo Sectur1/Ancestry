@@ -107,6 +107,26 @@ const server = http.createServer((req, res) => {
                 res.end(data)
             } 
         })
+    }else if(req.url.includes("/cs/legal/privacystatement") ){
+        fs.readFile('./pages/privacystatement.html', (err, data) => {
+            if (err) {
+                res.statusCode = 404
+                res.end(`<h1><b>Sorry ${req.url} not found</b></h1>`)
+            } else {
+                res.statusCode = 200
+                res.end(header+data+footer)
+            } 
+        })
+    }else if(req.url.includes("/s/phonesupport") ){
+        fs.readFile('./pages/phonesupport.html', (err, data) => {
+            if (err) {
+                res.statusCode = 404
+                res.end(`<h1><b>Sorry ${req.url} not found</b></h1>`)
+            } else {
+                res.statusCode = 200
+                res.end(header+data+footer)
+            } 
+        })
     }else if (req.url.startsWith("/assets") || req.url.includes('.')) {
         fs.readFile(req.url.startsWith("/assets")?"./pages" +  decodeURI(req.url):"./pages/" + decodeURI(req.url.substring(5)), (err, data) => {
             if (err) {

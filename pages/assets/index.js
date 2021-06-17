@@ -12273,7 +12273,7 @@ _taoD = {
                 if (!e)
                     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return !t || "object" != typeof t && "function" != typeof t ? e : t
-            }(this, (o.__proto__ || Object.getPrototypeOf(o)).call(this, e + ": One or more options were invalid. Please visit https://www.ancestry.com/cs/standards/" + e.toLowerCase() + " for documentation.\n\n" + t.join("\n")));
+            }(this, (o.__proto__ || Object.getPrototypeOf(o)).call(this, e + ": One or more options were invalid. Please visit /cs/standards/" + e.toLowerCase() + " for documentation.\n\n" + t.join("\n")));
             return n.label = e,
             n.errors = t,
             n
